@@ -1,6 +1,6 @@
 import os
 import openpyxl as xl
-from functions import update_output
+from same_title.functions import update_output
 # from openpyxl.utils import get_column_letter
 import openpyxl.styles as styles
 

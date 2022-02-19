@@ -1,6 +1,6 @@
 import openpyxl as xl
 import os
-from functions import update_output
+from same_title.functions import update_output
 
 
 def get_title(window, values):

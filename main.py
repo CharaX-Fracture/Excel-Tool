@@ -1,8 +1,8 @@
 import PySimpleGUI as sg
 from keys import Keys
 
-import same_title.main as st
-import about.main as about
+from same_title.main import same_title
+from about.main import about
 
 
 def main():
@@ -19,12 +19,14 @@ def main():
 
     while True:
         event, values = window.read()
-        window.hide()
+
         if event == Keys.same_title:
-            st.main()
+            window.hide()
+            same_title()
 
         elif event == Keys.about:
-            about.main()
+            window.hide()
+            about()
 
         elif event == sg.WIN_CLOSED:
             break
@@ -32,3 +34,7 @@ def main():
         window.un_hide()
 
     window.close()
+
+
+if __name__ == '__main__':
+    main()

@@ -1,10 +1,10 @@
-from layout import Layout
-from operate_file import operate_file
-from get_title import get_title
+from same_title.layout import Layout
+from same_title.operate_file import operate_file
+from same_title.get_title import get_title
 import PySimpleGUI as sg
 
 
-def main():
+def same_title():
     layout = Layout.layout
 
     window = sg.Window('汇总格式相同的文件', layout)

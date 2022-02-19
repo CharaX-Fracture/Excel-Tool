@@ -1,9 +1,9 @@
 import PySimpleGUI as sg
 import webbrowser
-from keys import Keys
+from about.keys import Keys
 
 
-def main():
+def about():
     me_frame = sg.Frame('关于作者', [
         [sg.Button('B站', key=Keys.bili)],
         [sg.Text('QQ:')]
